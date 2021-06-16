@@ -10,10 +10,12 @@
 
 p {
 	font-size: large;
+	color: gray;
 }
 
 * {
 	text-align: center;
+<<<<<<< HEAD
 	background-color: black;
 	color: gray;
 	margin: 0;
@@ -29,3 +31,6 @@ li {
 	background-color: rgba(255, 255, 255, 0.7);
 	color: white;
 }
+=======
+}
+>>>>>>> origin/master
