@@ -13,12 +13,6 @@ p {
 	color: gray;
 }
 
-* {
-	text-align: center;
-	background-color: black;
-	color: gray;
-	margin: 0;
-}
 
 li {
 	list-style: none;
