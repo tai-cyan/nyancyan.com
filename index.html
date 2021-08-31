@@ -3,20 +3,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <meta property="og:url" content="https://nyancyan.com"</meta>
-  <meta property="og:type" content="website"</meta>
-  <meta property="og:title" content="ﾄｯﾌﾟﾍﾟｰｼﾞ"</meta>
-  <meta property="og:description" content="ｲﾋﾋ~ｵﾋｮﾋｮ"</meta>
-  <meta property="og:site_name" content="にゃんちゃんどっとこむ"</meta>
-  <meta property="og:image" content="https://xn--n8jwkvb1b7b6i5e.xn--tckwe/internet_character.png"</meta>
-  <meta name="twitter:card" content="summary"</meta>
-<!--   <link href="style.css" rel="stylesheet">  -->
-  <title>にゃんちゃんどっとこむ</title>
+  <meta property="og:url" content="https://nyancyan.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ﾄｯﾌﾟﾍﾟｰｼﾞ">
+  <meta property="og:description" content="ｲﾋﾋ~ｵﾋｮﾋｮ">
+  <meta property="og:site_name" content="にゃんちゃんどっとこむ">
+  <meta property="og:image" content="https://xn--n8jwkvb1b7b6i5e.xn--tckwe/internet_character.png">
+  <meta name="twitter:card" content="summary">
+
+  <title id="title2">にゃんちゃんどっとこむ</title>
 </head>
 <body >
+<!-- start dropdown -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">にゃんちゃんどっとこむ！</a>
+    <a class="navbar-brand" href="#" id="midasi">にゃんちゃんどっとこむ！</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,17 +45,29 @@
             <li><a class="dropdown-item" href="./whois.html">About me</a></li>
           </ul>
         </li>
+<!-- start language -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item"><button id="b_j">日本語(default)</button></a></li>
+            <li><a class="dropdown-item"><button id="b_a">怪レい日本语</button></a></li>
+          </ul>
+        </li>
+<!-- end language -->
       </ul>
     </div>
   </div>
 </nav>
+<!-- end dropdown -->
 
 <div class="row">
 <div class="card mx-auto bg-white" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"></h5>
-    <h6 class="card-subtitle mb-2 text-muted">ストレージ</h6>
-    <p class="card-text">データ置き場</p>
+    <h6 class="card-subtitle mb-2 text-muted" id="strage">ストレージ</h6>
+    <p class="card-text" id="strage_1">データ置き場</p>
     <a href="./strage" class="card-link">Strage</a>
   </div>
 </div>
@@ -62,8 +75,8 @@
 <div class="card mx-auto bg-white" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"></h5>
-    <h6 class="card-subtitle mb-2 text-muted">ツール</h6>
-    <p class="card-text">ツール置き場</p>
+    <h6 class="card-subtitle mb-2 text-muted" id="tools">ツール</h6>
+    <p class="card-text" id="tools_1">ツール置き場</p>
     <a href="./tools.html" class="card-link">Tools</a>
   </div>
 </div>
@@ -71,8 +84,8 @@
 <div class="card mx-auto bg-white" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"></h5>
-    <h6 class="card-subtitle mb-2 text-muted">にゃんちゃんについて</h6>
-    <p class="card-text">自己紹介</p>
+    <h6 class="card-subtitle mb-2 text-muted" id="aboutMe">にゃんちゃんについて</h6>
+    <p class="card-text" id="aboutMe_1">自己紹介</p>
     <a href="./whois.html" class="card-link">About me</a>
   </div>
 </div>
@@ -107,6 +120,37 @@
   <div style="text-align: center;">
     <p>©︎2021 nyancyan</p>
   </div>
+
+<!-- script -->
+<script>
+    const japanese = () => {
+    document.getElementById("midasi").innerHTML = "にゃんちゃんどっとこむ!";
+    document.getElementById("strage").innerHTML = "ストレージ";
+    document.getElementById("strage_1").innerHTML = "データ置き場";
+    document.getElementById("tools").innerHTML = "ツール";
+    document.getElementById("tools_1").innerHTML = "ツール置き場";
+    document.getElementById("aboutMe").innerHTML = "にゃんちゃんについて"
+    document.getElementById("aboutMe_1").innerHTML = "自己紹介";
+  }
+
+  const ayasi = () => {
+    document.getElementById("midasi").innerHTML = "にゃんちゃんとっどこむ";
+    document.getElementById("strage").innerHTML = "ヌ卜レーヅ";
+    document.getElementById("strage_1").innerHTML = "データ置き场";
+    document.getElementById("tools").innerHTML = "ツー儿";
+    document.getElementById("tools_1").innerHTML = "ツー儿置き场";
+    document.getElementById("aboutMe").innerHTML = "にゃんちゃんについて";
+    document.getElementById("aboutMe_1").innerHTML = "自己绍介";
+  }
+
+  let button_j = document.getElementById("b_j");
+  button_j.addEventListener('click', japanese);
+
+  let button_a = document.getElementById("b_a");
+  button_a.addEventListener('click', ayasi);
+
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
